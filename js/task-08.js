@@ -12,7 +12,8 @@ function handleSubmit(event) {
 		return alert("Please fill in all the fields!");
 	}
 
-	console.log(`Email: ${email.value}, Password: ${password.value}`);
+	const obj = { Email: email.value, Password: password.value };
+	console.log(obj);
 	event.currentTarget.reset();
 }
 // Напиши скрипт управління формою логіна.
